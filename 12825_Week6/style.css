@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2d3436;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+form {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 35px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #0984e3;
+    margin-top: 5px;
+}
+
+fieldset {
+    border: 1.5px solid #74b9ff;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+}
+
+legend {
+    font-weight: 600;
+    color: #0984e3;
+    padding: 0 10px;
+}
+
+p {
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #2d3436;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.8px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: 0.25s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    outline: none;
+    border-color: #0984e3;
+    box-shadow: 0 0 6px rgba(9, 132, 227, 0.3);
+}
+
+.radio-options {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.radio-item input {
+    accent-color: #0984e3;
+}
+
+
+.form-actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #0984e3;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+input[type="submit"]:hover {
+    background-color: #74b9ff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 25px 20px;
+    }
+}
